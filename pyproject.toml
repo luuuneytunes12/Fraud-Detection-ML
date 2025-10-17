@@ -14,8 +14,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
+    "cycler>=0.12.1",
     "ipywidgets>=8.1.7",
     "loguru",
+    "matplotlib>=3.10.7",
     "mkdocs",
     "numpy==1.26.4",
     "pandas==2.0.3",
@@ -25,11 +27,12 @@ dependencies = [
     "python-dotenv",
     "ray>=2.49.2",
     "ruff",
+    "seaborn>=0.13.2",
     "setuptools>=80.9.0",
     "spark>=0.2.1",
+    "sweetviz>=2.3.1",
     "tqdm",
     "typer",
-    "ydata-profiling>=4.17.0",
 ]
 requires-python = ">=3.12.0"
 
