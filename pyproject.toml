@@ -17,6 +17,7 @@ dependencies = [
     "cycler>=0.12.1",
     "imblearn>=0.0",
     "ipywidgets>=8.1.7",
+    "lightgbm[gpu]>=4.6.0",
     "loguru",
     "matplotlib>=3.10.7",
     "mkdocs",
