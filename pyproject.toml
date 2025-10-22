@@ -37,6 +37,7 @@ dependencies = [
     "sweetviz>=2.3.1",
     "tqdm",
     "typer",
+    "yellowbrick>=1.5",
 ]
 requires-python = ">=3.12.0"
 
