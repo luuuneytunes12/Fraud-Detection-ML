@@ -3,7 +3,9 @@ from typing import Tuple
 from imblearn.over_sampling import SMOTE
 import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn.base import BaseEstimator
 from sklearn.model_selection import train_test_split
+
 
 
 # - Class for Data Cleaning Tasks -
@@ -78,13 +80,13 @@ def train_val_test_split(
 
     # 1. Train-Val and Test Split (80% train_val, 20% test)
     X_train_val, X_test, y_train_val, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42, stratify=y
+        X, y, test_size=0.2, shuffle=True, random_state=42, stratify=y
     )
 
     # 2. Train and Validation Split (75% train, 25% val of train_val)
     # This results in: 60% train, 20% val, 20% test
     X_train, X_val, y_train, y_val = train_test_split(
-        X_train_val, y_train_val, test_size=0.25, random_state=42, stratify=y_train_val
+        X_train_val, y_train_val, test_size=0.25, shuffle=True, random_state=42, stratify=y_train_val
     )
 
     # Print split information
@@ -109,6 +111,8 @@ def train_val_test_split(
     return X_train, X_val, X_test, y_train, y_val, y_test
 
 
+
+#! Legacy SMOTE Applier (DELETE SOON & WRITE PLOTTING CODE SEPARATELY)
 class ApplySmote:
     """Apply SMOTE (Synthetic Minority Oversampling Technique) for class balancing."""
 
@@ -227,6 +231,51 @@ class ApplySmote:
                 fontweight="bold",
                 fontsize=10,
             )
+
+        plt.tight_layout()
+        plt.show()
+
+
+class SmoteApplier(BaseEstimator):
+    def __init__(self, random_state=42, k_neighbors=5):
+        # Store parameters as instance attributes for sklearn compatibility
+        self.random_state = random_state
+        self.k_neighbors = k_neighbors
+        self.smote = SMOTE(random_state=random_state, k_neighbors=k_neighbors)
+
+    def fit(self, X, y=None):
+        # No fitting just return self, SMOTE is done at fit_resample stage
+        return self
+    
+    def fit_resample(self, X, y):
+        """Method called by imblearn Pipeline for resampling"""
+        X_res, y_res = self.smote.fit_resample(X, y)
+        X_resampled_df = pd.DataFrame(X_res, columns=X.columns)
+        y_resampled_series = pd.Series(y_res, name="Class")
+        self._plot_class_distribution(y, y_res)
+        return X_resampled_df, y_resampled_series
+
+    @staticmethod
+    def _plot_class_distribution(y_before, y_after):
+        fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+        counts_before = y_before.value_counts().sort_index()
+        counts_after = y_after.value_counts().sort_index()
+        total_before = len(y_before)
+        total_after = len(y_after)
+
+        counts_before.plot(kind="bar", ax=axes[0], color=["#A3C1E0", "#F4C3D7"])
+        axes[0].set(title="Before SMOTE", xlabel="Class", ylabel="Count")
+        axes[0].set_xticklabels(["Non-Fraud", "Fraud"], rotation=0)
+        for i, count in enumerate(counts_before):
+            axes[0].annotate(f"{count} ({count/total_before*100:.1f}%)", (i, count),
+                             ha="center", va="bottom", fontweight="bold")
+
+        counts_after.plot(kind="bar", ax=axes[1], color=["#A3C1E0", "#F4C3D7"])
+        axes[1].set(title="After SMOTE", xlabel="Class", ylabel="Count")
+        axes[1].set_xticklabels(["Non-Fraud", "Fraud"], rotation=0)
+        for i, count in enumerate(counts_after):
+            axes[1].annotate(f"{count} ({count/total_after*100:.1f}%)", (i, count),
+                             ha="center", va="bottom", fontweight="bold")
 
         plt.tight_layout()
         plt.show()
