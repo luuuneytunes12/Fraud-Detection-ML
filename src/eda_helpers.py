@@ -79,16 +79,23 @@ class OutlierAnalyser:
 
         n_cols = max_cols
         n_rows = (len(numeric_cols) + n_cols - 1) // n_cols
-        
-        
+
         fig, axs = plt.subplots(n_rows, n_cols, figsize=(5 * n_cols, 4 * n_rows))
         fig.suptitle("Violin Plots of Numeric Features", y=1, size=25)
         axs = axs.flatten() if n_rows > 1 else [axs]
-        
-        for i, col in enumerate(numeric_cols):
-            sns.violinplot(data=df, y=col, hue=target_col,  ax=axs[i], palette=palette, inner_kws=dict(box_width=15, whis_width=2, color=".8"))
-            axs[i].set_title(col + ', skewness is: '+str(round(df[col].skew(axis = 0, skipna = True),2)))
 
+        for i, col in enumerate(numeric_cols):
+            sns.violinplot(
+                data=df,
+                y=col,
+                hue=target_col,
+                ax=axs[i],
+                palette=palette,
+                inner_kws=dict(box_width=15, whis_width=2, color=".8"),
+            )
+            axs[i].set_title(
+                col + ", skewness is: " + str(round(df[col].skew(axis=0, skipna=True), 2))
+            )
 
         # Remove unused subplots
         for j in range(i + 1, len(axs)):
@@ -96,4 +103,3 @@ class OutlierAnalyser:
 
         plt.tight_layout()
         plt.show()
-        

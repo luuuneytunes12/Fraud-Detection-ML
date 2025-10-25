@@ -7,7 +7,6 @@ from sklearn.base import BaseEstimator
 from sklearn.model_selection import train_test_split
 
 
-
 # - Class for Data Cleaning Tasks -
 class DataCleaner:
     # def remove_correlated_features(df, threshold=0.65):
@@ -86,7 +85,12 @@ def train_val_test_split(
     # 2. Train and Validation Split (75% train, 25% val of train_val)
     # This results in: 60% train, 20% val, 20% test
     X_train, X_val, y_train, y_val = train_test_split(
-        X_train_val, y_train_val, test_size=0.25, shuffle=True, random_state=42, stratify=y_train_val
+        X_train_val,
+        y_train_val,
+        test_size=0.25,
+        shuffle=True,
+        random_state=42,
+        stratify=y_train_val,
     )
 
     # Print split information
@@ -109,7 +113,6 @@ def train_val_test_split(
     print("y_test shape:", y_test.shape)
 
     return X_train, X_val, X_test, y_train, y_val, y_test
-
 
 
 #! Legacy SMOTE Applier (DELETE SOON & WRITE PLOTTING CODE SEPARATELY)
@@ -246,7 +249,7 @@ class SmoteApplier(BaseEstimator):
     def fit(self, X, y=None):
         # No fitting just return self, SMOTE is done at fit_resample stage
         return self
-    
+
     def fit_resample(self, X, y):
         """Method called by imblearn Pipeline for resampling"""
         X_res, y_res = self.smote.fit_resample(X, y)
@@ -267,15 +270,25 @@ class SmoteApplier(BaseEstimator):
         axes[0].set(title="Before SMOTE", xlabel="Class", ylabel="Count")
         axes[0].set_xticklabels(["Non-Fraud", "Fraud"], rotation=0)
         for i, count in enumerate(counts_before):
-            axes[0].annotate(f"{count} ({count/total_before*100:.1f}%)", (i, count),
-                             ha="center", va="bottom", fontweight="bold")
+            axes[0].annotate(
+                f"{count} ({count / total_before * 100:.1f}%)",
+                (i, count),
+                ha="center",
+                va="bottom",
+                fontweight="bold",
+            )
 
         counts_after.plot(kind="bar", ax=axes[1], color=["#A3C1E0", "#F4C3D7"])
         axes[1].set(title="After SMOTE", xlabel="Class", ylabel="Count")
         axes[1].set_xticklabels(["Non-Fraud", "Fraud"], rotation=0)
         for i, count in enumerate(counts_after):
-            axes[1].annotate(f"{count} ({count/total_after*100:.1f}%)", (i, count),
-                             ha="center", va="bottom", fontweight="bold")
+            axes[1].annotate(
+                f"{count} ({count / total_after * 100:.1f}%)",
+                (i, count),
+                ha="center",
+                va="bottom",
+                fontweight="bold",
+            )
 
         plt.tight_layout()
         plt.show()
