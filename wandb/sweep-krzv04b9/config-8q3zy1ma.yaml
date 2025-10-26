@@ -1,0 +1,30 @@
+wandb_version: 1
+
+bagging_fraction:
+  value: 0.4825397241917369
+bagging_freq:
+  value: 0
+boosting_type:
+  value: gbdt
+feature_fraction:
+  value: 0.9963893251828316
+lambda_l1:
+  value: 1.5571216109428232
+lambda_l2:
+  value: 5.606774164526077
+learning_rate:
+  value: 1.34429289891344
+max_bin:
+  value: 486
+max_depth:
+  value: 10
+min_data_in_leaf:
+  value: 80
+min_gain_to_split:
+  value: 3.4820650475979904
+num_iterations:
+  value: 735
+num_leaves:
+  value: 245
+path_smooth:
+  value: 18.139274786009285

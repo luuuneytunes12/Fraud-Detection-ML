@@ -1,0 +1,1 @@
+{"columns": ["Class", "Precision", "Recall", "F1-score", "Support"], "data": [["Non-Fraud", "1.00", "1.00", "1.00", "45321"], ["Fraud", "0.28", "0.81", "0.42", "75"]]}

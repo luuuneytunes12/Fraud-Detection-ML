@@ -1,0 +1,51 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 5
+                - 8
+                - 53
+            "2":
+                - 5
+                - 8
+                - 53
+            "3":
+                - 2
+                - 14
+            "4": 3.12.11
+            "5": 0.22.2
+            "8":
+                - 1
+            "12": 0.22.2
+            "13": darwin-arm64
+bagging_fraction:
+    value: 0.5925584162297219
+bagging_freq:
+    value: 6
+boosting_type:
+    value: gbdt
+feature_fraction:
+    value: 0.6145187618825942
+lambda_l1:
+    value: 5.554628081642605
+lambda_l2:
+    value: 1.8740302703502945
+learning_rate:
+    value: 0.028000504692868747
+max_bin:
+    value: 142
+max_depth:
+    value: 6
+min_data_in_leaf:
+    value: 81
+min_gain_to_split:
+    value: 0.6405006276811348
+num_iterations:
+    value: 765
+num_leaves:
+    value: 168
+path_smooth:
+    value: 25.449030465263277
