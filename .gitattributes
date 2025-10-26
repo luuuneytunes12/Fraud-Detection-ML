@@ -1,3 +1,12 @@
 data/** filter=lfs diff=lfs merge=lfs -text
 data/raw/** filter=lfs diff=lfs merge=lfs -text
 data/processed/** filter=lfs diff=lfs merge=lfs -text
+wandb/run-20251026_170825-pqf09b0p filter=lfs diff=lfs merge=lfs -text
+wandb/run-20251026_170901-m3oa2mwc filter=lfs diff=lfs merge=lfs -text
+wandb/run-20251026_170913-5tk72jbb filter=lfs diff=lfs merge=lfs -text
+wandb/debug-internal.log filter=lfs diff=lfs merge=lfs -text
+wandb/debug.log filter=lfs diff=lfs merge=lfs -text
+wandb/latest-run filter=lfs diff=lfs merge=lfs -text
+wandb/run-20251026_170838-0i3avej2 filter=lfs diff=lfs merge=lfs -text
+wandb/run-20251026_170850-1wf6hq2i filter=lfs diff=lfs merge=lfs -text
+wandb/run-20251026_170924-bkvlfvzs filter=lfs diff=lfs merge=lfs -text
