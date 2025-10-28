@@ -1,0 +1,22 @@
+wandb_version: 1
+
+feature_fraction:
+  value: 0.6957996742939854
+lambda_l2:
+  value: 4.154661311895207
+learning_rate:
+  value: 0.005753195981806916
+max_bin:
+  value: 146
+max_depth:
+  value: 7
+min_data_in_leaf:
+  value: 23
+min_gain_to_split:
+  value: 1.8220831346785191
+num_iterations:
+  value: 106
+num_leaves:
+  value: 298
+path_smooth:
+  value: 66.08756004810074

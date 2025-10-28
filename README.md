@@ -1,4 +1,4 @@
-# Fraud-Detection: Neural Networks, QML & Traditional ML Techniques
+# Fraud-Detection: Neural Networks, Traditional ML Techniques
 
 ## Project Overview
 

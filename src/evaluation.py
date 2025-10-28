@@ -1,6 +1,4 @@
 import matplotlib.pyplot as plt
-import mlflow
-import numpy as np
 import seaborn as sns
 from sklearn.metrics import (
     accuracy_score,
@@ -137,5 +135,3 @@ class ResultsAnalyser:
         plt.ylabel("Actual")
         plt.tight_layout()
         plt.show()
-
-

@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":20},"val_f2_score":0.5910765508378263,"val_f2_score_std":0.03099538869884546,"val_roc_auc":0.9828647866206678,"_runtime":20,"_timestamp":1.761552251204808e+09,"val_precision":0.262141123635614,"val_recall":0.8677192982456141,"_step":0}

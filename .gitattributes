@@ -10,3 +10,4 @@ wandb/latest-run filter=lfs diff=lfs merge=lfs -text
 wandb/run-20251026_170838-0i3avej2 filter=lfs diff=lfs merge=lfs -text
 wandb/run-20251026_170850-1wf6hq2i filter=lfs diff=lfs merge=lfs -text
 wandb/run-20251026_170924-bkvlfvzs filter=lfs diff=lfs merge=lfs -text
+wlunlun1212-singapore-management-university filter=lfs diff=lfs merge=lfs -text

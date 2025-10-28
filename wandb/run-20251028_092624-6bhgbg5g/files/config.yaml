@@ -1,0 +1,169 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 5
+                - 8
+                - 53
+            "2":
+                - 5
+                - 8
+                - 53
+            "3":
+                - 2
+                - 13
+                - 14
+                - 15
+                - 16
+            "4": 3.12.11
+            "5": 0.22.2
+            "8":
+                - 1
+            "12": 0.22.2
+            "13": darwin-arm64
+        visualize:
+            test_confusion_matrix:
+                panel_config:
+                    fieldSettings:
+                        Actual: Actual
+                        Predicted: Predicted
+                        nPredictions: nPredictions
+                    panelDefId: wandb/confusion_matrix/v1
+                    stringSettings:
+                        title: Confusion Matrix Curve
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: test_confusion_matrix_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+            test_pr_curve:
+                panel_config:
+                    fieldSettings:
+                        class: class
+                        x: recall
+                        "y": precision
+                    panelDefId: wandb/area-under-curve/v0
+                    stringSettings:
+                        title: Precision-Recall Curve
+                        x-axis-title: Recall
+                        y-axis-title: Precision
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: test_pr_curve_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+            test_roc_curve:
+                panel_config:
+                    fieldSettings:
+                        class: class
+                        x: fpr
+                        "y": tpr
+                    panelDefId: wandb/area-under-curve/v0
+                    stringSettings:
+                        title: ROC Curve
+                        x-axis-title: False positive rate
+                        y-axis-title: True positive rate
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: test_roc_curve_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+bagging_fraction:
+    value: 0.9769722147207875
+bagging_freq:
+    value: 6
+boosting_type:
+    value: gbdt
+device_type:
+    value: cpu
+feature_fraction:
+    value: 0.7649248467796567
+features:
+    value: 30
+force_col_wise:
+    value: true
+lambda_l1:
+    value: 4.650062660619661
+lambda_l2:
+    value: 7.435605372729563
+learning_rate:
+    value: 0.16396254805729435
+max_bin:
+    value: 388
+max_depth:
+    value: 11
+min_data_in_leaf:
+    value: 100
+min_gain_to_split:
+    value: 1.1622778980446655
+n_jobs:
+    value: -1
+num_iterations:
+    value: 902
+num_leaves:
+    value: 168
+objective:
+    value: binary
+path_smooth:
+    value: 76.35313826816986
+pipeline:
+    value: SMOTE + LightGBM (Optimized)
+random_state:
+    value: 42
+test_samples:
+    value: 56746
+train_samples:
+    value: 226980
+verbose:
+    value: -1

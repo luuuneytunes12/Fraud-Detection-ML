@@ -1,0 +1,73 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 5
+                - 8
+                - 53
+            "2":
+                - 5
+                - 8
+                - 53
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+            "4": 3.12.11
+            "5": 0.22.2
+            "8":
+                - 1
+            "12": 0.22.2
+            "13": darwin-arm64
+boosting_type:
+    value: gbdt
+class_weight:
+    value: null
+colsample_bytree:
+    value: 1
+device_type:
+    value: cpu
+force_col_wise:
+    value: true
+importance_type:
+    value: split
+learning_rate:
+    value: 0.1
+max_depth:
+    value: 5
+min_child_samples:
+    value: 20
+min_child_weight:
+    value: 0.001
+min_split_gain:
+    value: 0
+n_estimators:
+    value: 100
+n_folds:
+    value: 5
+n_jobs:
+    value: -1
+num_leaves:
+    value: 31
+objective:
+    value: binary
+pipeline:
+    value: SMOTE + LGBMClassifier
+random_state:
+    value: 42
+reg_alpha:
+    value: 0
+reg_lambda:
+    value: 0
+subsample:
+    value: 1
+subsample_for_bin:
+    value: 200000
+subsample_freq:
+    value: 0
+verbose:
+    value: -1
