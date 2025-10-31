@@ -17,7 +17,11 @@ class ResultsAnalyser:
 
     @staticmethod
     def analyze_predictions(
-        y_true, y_pred, y_pred_proba=None, class_labels=["Non-Fraud", "Fraud"], model_name="Model"
+        y_true,
+        y_pred,
+        y_pred_proba=None,
+        class_labels=["Non-Fraud", "Fraud"],
+        model_name="Model",
     ):
         """
         Complete analysis of model predictions.

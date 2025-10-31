@@ -48,9 +48,9 @@ def check_scaling_validity(X_df_scaled: pd.DataFrame):
     """
     # Combine data for plotting
 
-    print("✅ Feature means after scaling:\n", X_df_scaled.mean())
-    print("-----------------------------------")
-    print("\n✅ Feature std devs after scaling:\n", X_df_scaled.std())
+    print("Feature means after scaling:\n", X_df_scaled.mean())
+    print("=" * 25)
+    print("\nFeature std devs after scaling:\n", X_df_scaled.std())
 
 
 # - Train-Val-Test Splitter -
@@ -103,12 +103,20 @@ def train_val_test_split(
         f"{round(X_train.shape[0] / X.shape[0] * 100, 2)}%",
     )
     print("y_train shape:", y_train.shape)
-    print("-----------------------------")
-    print("X_val shape:", X_val.shape, "Pct:", f"{round(X_val.shape[0] / X.shape[0] * 100, 2)}%")
-    print("y_val shape:", y_val.shape)
-    print("-----------------------------")
+    print("=" * 25)
     print(
-        "X_test shape:", X_test.shape, "Pct:", f"{round(X_test.shape[0] / X.shape[0] * 100, 2)}%"
+        "X_val shape:",
+        X_val.shape,
+        "Pct:",
+        f"{round(X_val.shape[0] / X.shape[0] * 100, 2)}%",
+    )
+    print("y_val shape:", y_val.shape)
+    print("=" * 25)
+    print(
+        "X_test shape:",
+        X_test.shape,
+        "Pct:",
+        f"{round(X_test.shape[0] / X.shape[0] * 100, 2)}%",
     )
     print("y_test shape:", y_test.shape)
 

@@ -94,7 +94,9 @@ class OutlierAnalyser:
                 inner_kws=dict(box_width=15, whis_width=2, color=".8"),
             )
             axs[i].set_title(
-                col + ", skewness is: " + str(round(df[col].skew(axis=0, skipna=True), 2))
+                col
+                + ", skewness is: "
+                + str(round(df[col].skew(axis=0, skipna=True), 2))
             )
 
         # Remove unused subplots
