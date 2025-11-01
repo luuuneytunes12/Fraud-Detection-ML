@@ -1,0 +1,36 @@
+{
+  "os":  "macOS-26.0.1-arm64-arm-64bit",
+  "python":  "CPython 3.12.11",
+  "startedAt":  "2025-11-01T05:16:45.286269Z",
+  "program":  "/Users/lunlun/Downloads/Github/Fraud-Detection-ML/notebooks/04-cwl-pytorch-mlp.ipynb",
+  "codePath":  "notebooks/04-cwl-pytorch-mlp.ipynb",
+  "codePathLocal":  "notebooks/04-cwl-pytorch-mlp.ipynb",
+  "git":  {
+    "remote":  "https://github.com/luuuneytunes12/Fraud-Detection-ML",
+    "commit":  "76042b3dcd0c4a4666de69426d556b9c06dbe02b"
+  },
+  "email":  "wlunlun1212@gmail.com",
+  "root":  ".",
+  "host":  "Chengs-MacBook-Pro.local",
+  "executable":  "/Users/lunlun/Downloads/Github/Fraud-Detection-ML/.venv/bin/python",
+  "cpu_count":  11,
+  "cpu_count_logical":  11,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "421177667584"
+    }
+  },
+  "memory":  {
+    "total":  "19327352832"
+  },
+  "apple":  {
+    "name":  "Apple M3 Pro",
+    "ecpuCores":  6,
+    "pcpuCores":  5,
+    "gpuCores":  14,
+    "memoryGb":  18,
+    "ramTotalBytes":  "19327352832"
+  },
+  "writerId":  "8anst6d8bq4t6m24unbo0089tig9433b"
+}
