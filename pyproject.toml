@@ -24,6 +24,7 @@ dependencies = [
     "mkdocs",
     "mlflow>=3.5.0",
     "numpy==1.26.4",
+    "optuna>=4.5.0",
     "pandas==2.0.3",
     "pip",
     "plotly>=6.3.1",
