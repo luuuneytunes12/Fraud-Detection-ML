@@ -15,6 +15,7 @@ classifiers = [
 ]
 dependencies = [
     "cycler>=0.12.1",
+    "graphviz>=0.21",
     "imblearn>=0.0",
     "ipywidgets>=8.1.7",
     "lightgbm[gpu]>=4.6.0",
@@ -37,9 +38,12 @@ dependencies = [
     "seaborn>=0.13.2",
     "setuptools>=80.9.0",
     "shap>=0.49.1",
+    "skorch>=1.2.0",
     "spark>=0.2.1",
     "sweetviz>=2.3.1",
     "torch>=2.9.0",
+    "torchsummary>=1.5.1",
+    "torchview>=0.2.7",
     "torchvision>=0.24.0",
     "tqdm",
     "typer",
