@@ -1,0 +1,87 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            td1htmxf43jq44hrxqmqz0h7l71wczd4:
+                apple:
+                    ecpuCores: 6
+                    gpuCores: 14
+                    memoryGb: 18
+                    name: Apple M3 Pro
+                    pcpuCores: 5
+                    ramTotalBytes: "19327352832"
+                    swapTotalBytes: "10737418240"
+                codePath: notebooks/04-cwl-pytorch-mlp.ipynb
+                codePathLocal: notebooks/04-cwl-pytorch-mlp.ipynb
+                cpu_count: 11
+                cpu_count_logical: 11
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "434484412416"
+                email: wlunlun1212@gmail.com
+                executable: /Users/lunlun/Downloads/Github/Fraud-Detection-ML/.venv/bin/python
+                git:
+                    commit: e6f6ca6b523f717ef6a7f0887efcaf1510ba2d8a
+                    remote: https://github.com/luuuneytunes12/Fraud-Detection-ML
+                host: Chengs-MacBook-Pro.local
+                memory:
+                    total: "19327352832"
+                os: macOS-26.0.1-arm64-arm-64bit
+                program: /Users/lunlun/Downloads/Github/Fraud-Detection-ML/notebooks/04-cwl-pytorch-mlp.ipynb
+                python: CPython 3.12.11
+                root: .
+                startedAt: "2025-11-04T06:29:46.213174Z"
+                writerId: td1htmxf43jq44hrxqmqz0h7l71wczd4
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 5
+                - 8
+                - 35
+                - 41
+                - 53
+                - 106
+            "2":
+                - 1
+                - 5
+                - 8
+                - 35
+                - 41
+                - 53
+                - 106
+            "3":
+                - 2
+                - 7
+                - 66
+            "4": 3.12.11
+            "5": 0.22.2
+            "8":
+                - 1
+            "12": 0.22.2
+            "13": darwin-arm64
+dropout_rate:
+    value: 0.1495870713458829
+hidden_units:
+    value: 256
+input_features:
+    value: 30
+learning_rate:
+    value: 0.0004818211096601037
+num_layers:
+    value: 2
+output_features:
+    value: 1
+threshold:
+    value: 0.546455928615033

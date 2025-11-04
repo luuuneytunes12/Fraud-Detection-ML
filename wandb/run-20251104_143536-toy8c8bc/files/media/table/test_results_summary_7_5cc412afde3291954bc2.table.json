@@ -1,0 +1,1 @@
+{"columns": ["Metric", "Value", "CV_Baseline"], "data": [["Accuracy", "0.9990", "N/A"], ["Precision", "0.6754", "~0.60"], ["Recall", "0.8105", "~0.84"], ["F1-Score", "0.7368", "N/A"], ["F2-Score", "0.7794", "0.7921"], ["AUC", "0.9524", "N/A"]]}

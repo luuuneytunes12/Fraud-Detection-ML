@@ -1,0 +1,53 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 5
+                - 8
+                - 35
+                - 41
+                - 53
+                - 106
+            "2":
+                - 1
+                - 5
+                - 8
+                - 35
+                - 41
+                - 53
+                - 106
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+            "4": 3.12.11
+            "5": 0.22.2
+            "8":
+                - 1
+            "12": 0.22.2
+            "13": darwin-arm64
+dropout_rate:
+    value: 0.1495870713458829
+features:
+    value: 30
+hidden_units:
+    value: 256
+input_features:
+    value: 30
+learning_rate:
+    value: 0.0004818211096601037
+model_type:
+    value: PyTorch MLP
+num_layers:
+    value: 2
+test_samples:
+    value: 56746
+threshold:
+    value: 0.546455928615033
+train_samples:
+    value: 226980

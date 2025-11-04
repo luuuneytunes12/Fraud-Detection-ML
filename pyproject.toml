@@ -48,6 +48,7 @@ dependencies = [
     "tqdm",
     "typer",
     "wandb>=0.22.2",
+    "xgboost>=3.1.1",
     "yellowbrick>=1.5",
 ]
 requires-python = ">=3.12.0"
