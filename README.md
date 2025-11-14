@@ -76,7 +76,7 @@ Results are based on *fraud class*
 
 
 ## 💹 Business Impact
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 - **Higher fraud detection = less revenue leakage**
 Our models detect around 80% of fraudulent cases, versus 0% for the dummy baseline. In practice, that means we’re catching the majority of bad transactions that will turn into direct financial loss. 
