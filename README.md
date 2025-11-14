@@ -1,6 +1,6 @@
 # Fraud-Detection: LightGBM, Pytorch MLP & Stacking Ensemble
 
-## 🎯 Problem Statement 
+## ✅ Problem Statement 
 Credit Card Fraud results in billions in annual losses globally.
 Traditional rule-based fraud detection systems suffer from the following issues. 
 
@@ -18,7 +18,7 @@ Traditional rule-based fraud detection systems suffer from the following issues.
 Given the multitude of features of transactional data generated in milliseconds, we will need  Machine Learning models that **maximizes fraud detection (recall)**, while **minimizing false alarms** to reduce disruptions to customer transactions. However, due to extreme rarity of fraudulent transactions, data scientists often face problems such as extreme class imbalance while facing fraud datasets. 
 
 
-## 🎯 Project Objectives
+## ✅ Project Objectives
 Our goal is to achieve maximum performance on the fraud class, as measured by the $F_2$. The $F_2$ metric gives twice the importance to recall over precision, aligning our model's objective with the need to drastically reduce costly false negatives (undetected fraud). Consideration of precision remains important, in order for our model to not raise many false alarms. 
 
 ## ✅ My Solution 
@@ -58,7 +58,7 @@ Most fraud detection projects use single models. However, since I have just lear
 
 ```
 
-## 📊 Results 
+## ✅ Results 
 Results are based on *fraud class*
 
 | Model | Precision | Recall | F1 | F2 | PR-AUC | Business Outcome |
@@ -108,7 +108,7 @@ The chosen stacking model gives similar fraud capture strength than single model
 
 - Developing **stacking ensemble meta-classifier** combining different base models
 
-## 💻 Tech Stack 
+## ✅ Tech Stack 
 - **Scikit-Learn**: DummyClassifier & StackingClassifier 
 - **LightGBM**: Ensemble Learning Technique 
 - **SMOTE Oversampling Technique**
@@ -120,7 +120,7 @@ The chosen stacking model gives similar fraud capture strength than single model
 
 <hr>
 
-## Project Structure
+## ✅ Project Structure
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
