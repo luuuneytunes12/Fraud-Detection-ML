@@ -81,9 +81,11 @@ Results are based on *fraud class*
 - **Higher fraud detection = less revenue leakage**
 Our models detect around 80% of fraudulent cases, versus 0% for the dummy baseline. In practice, that means we’re catching the majority of bad transactions that will turn into direct financial loss. 
 <br>
+
 - **Optimized for recall where missing fraud is very expensive**
 We optimized using F2 score, which focuses on recall more heavily than precision. The stacking classifier model achieves the highest F2 score (~80%), meaning it consistently catches more fraud in the scenarios that matter most to the business, even under imbalance and noise. With such a high precision, with acceptable recall, it raises way fewer false alarms, which leads to happier customers and lower churn rates, while maintaining high detection patterns. 
 <br>
+
 - **Overall Impact**
 The chosen stacking model gives similar fraud capture strength than single models, while significantly reducing false positives. That combination translates into more fraud blocked, lower investigation cost, and a smoother experience for genuine customers — which is ultimately what **maximizes ROI** for this system.
 
@@ -193,11 +195,10 @@ The chosen stacking model gives similar fraud capture strength than single model
 <br>
 
 3. **Download and Prepare Dataset**  
-Place the raw credit card transaction CSV under `data/raw/`.  
+Place the raw credit card transaction CSV under `data/raw/`  
 <br>
 
-4. **Run Notebooks Sequentially**
-   Run individual notebooks in `notebooks/`
+4. **Run Notebooks Sequentially in `notebooks/`**
 
    
 
