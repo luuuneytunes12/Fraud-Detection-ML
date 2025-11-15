@@ -738,6 +738,7 @@ version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "cycler" },
+    { name = "fastapi" },
     { name = "graphviz" },
     { name = "imblearn" },
     { name = "ipywidgets" },
@@ -752,6 +753,7 @@ dependencies = [
     { name = "pandas" },
     { name = "pip" },
     { name = "plotly" },
+    { name = "pydantic" },
     { name = "pyspark" },
     { name = "python-crfsuite" },
     { name = "python-dotenv" },
@@ -770,6 +772,7 @@ dependencies = [
     { name = "torchvision" },
     { name = "tqdm" },
     { name = "typer" },
+    { name = "uvicorn" },
     { name = "wandb" },
     { name = "xgboost" },
     { name = "yellowbrick" },
@@ -778,6 +781,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "cycler", specifier = ">=0.12.1" },
+    { name = "fastapi", specifier = ">=0.119.0" },
     { name = "graphviz", specifier = ">=0.21" },
     { name = "imblearn", specifier = ">=0.0" },
     { name = "ipywidgets", specifier = ">=8.1.7" },
@@ -792,6 +796,7 @@ requires-dist = [
     { name = "pandas", specifier = "==2.0.3" },
     { name = "pip" },
     { name = "plotly", specifier = ">=6.3.1" },
+    { name = "pydantic", specifier = ">=2.12.3" },
     { name = "pyspark", specifier = ">=4.0.1" },
     { name = "python-crfsuite", specifier = ">=0.9.11" },
     { name = "python-dotenv" },
@@ -810,6 +815,7 @@ requires-dist = [
     { name = "torchvision", specifier = ">=0.24.0" },
     { name = "tqdm" },
     { name = "typer" },
+    { name = "uvicorn", specifier = ">=0.38.0" },
     { name = "wandb", specifier = ">=0.22.2" },
     { name = "xgboost", specifier = ">=3.1.1" },
     { name = "yellowbrick", specifier = ">=1.5" },

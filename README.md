@@ -117,6 +117,7 @@ The chosen stacking model gives similar fraud capture strength than single model
 - **Pytorch & Pytorch Lightning**: Neural Network Building 
 - **Optuna**: Neural Network Hyperparameter Tuning 
 - **WandB**: Experiment Logging & Tracking, Hyperparameter Sweeping
+- **FastAPI**: Model Serving & Prediction 
 
 
 
