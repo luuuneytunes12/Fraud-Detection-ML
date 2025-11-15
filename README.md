@@ -111,7 +111,7 @@ The chosen stacking model gives similar fraud capture strength than single model
 - Developing **stacking ensemble meta-classifier** combining different base models
 
 ## ✅ Tech Stack 
-- **Scikit-Learn**: DummyClassifier & StackingClassifier 
+- **Scikit-Learn**: DummyClassifier & Pipeline & Custom Classes & StackingClassifier 
 - **LightGBM**: Ensemble Learning Technique 
 - **SMOTE Oversampling Technique**
 - **Pytorch & Pytorch Lightning**: Neural Network Building 
